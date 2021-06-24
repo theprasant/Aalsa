@@ -1,0 +1,20 @@
+{
+  "name": "aalsa",
+  "version": "1.0.0",
+  "description": "your beloved aalsa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "prasant",
+  "license": "ISC",
+  "dependencies": {
+    "@replit/database": "^2.0.1",
+    "canvas": "^2.8.0",
+    "color-thief": "^2.2.5",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
+}
