@@ -14,7 +14,8 @@
     "canvas": "^2.8.0",
     "color-thief": "^2.2.5",
     "discord.js": "^12.5.3",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "owlbot-js": "^2.0.2"
   },
   "devDependencies": {}
 }

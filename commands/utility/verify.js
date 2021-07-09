@@ -1,7 +1,8 @@
 module.exports = {
   name: 'verify',
   description: 'Verify yourself.',
-    args: false,
+  args: false,
+  myChannelPerms:['VIEW_CHANNEL', 'SEND_MESSAGES'],
 
   execute(message, args, command, client, db) {
 

@@ -4,6 +4,8 @@ module.exports = {
   description: 'List all of my commands or info about a specific command.',
   aliases: ['commands'],
   usage: '[command name]',
+    myChannelPerms:['VIEW_CHANNEL', 'SEND_MESSAGES'],
+
 
   execute(message, args) {
     const data = [];

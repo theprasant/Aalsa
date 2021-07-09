@@ -3,8 +3,9 @@ module.exports = {
   name: 'chat',
   aliases: ['c', 'ch'],
   description: 'Chat with another bot',
-    args: true,
-    usage: '<message>',
+  myChannelPerms:['VIEW_CHANNEL', 'SEND_MESSAGES'],
+  args: true,
+  usage: '<message>',
 
   execute(message, args) {
     let url = `https://api.udit.gq/api/chatbot?message=${args.join(' ')}&name=Aalsa&user=${message.author.id}&gender=female`;
