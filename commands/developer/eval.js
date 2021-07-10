@@ -1,4 +1,5 @@
 const { prefix } = require('../../config.json');
+require("../../ExtendedMessage");
 
 module.exports = {
   name: 'eval',

@@ -12,12 +12,12 @@ module.exports = {
   aliases: ['ac', 'pfpcolor', 'pc', 'piccolor'],
   description: 'Displays the dominant color of user\'s avatar',
   args: false,
+ myChannelPerms:['VIEW_CHANNEL', 'SEND_MESSAGES', 'EMBED_LINKS', 'ATTACH_FILES'],
 
   execute(message, args, client) {
 
-    
-
     try {
+      
 
       const width = 1200;
      const height = 1200;
@@ -123,24 +123,24 @@ module.exports = {
             };
             */
 
-            const exampleEmbed = {
-              title: 'Some title',
-              image: {
-                url: 'attachment://discordjs.png',
-              },
-            };
+            
 
             //message.channel.send({ files: [file], embed: exampleEmbed })
 
             //    message.channel.send({ files: [file], embed: avatarEmbed })
             sentMsg.delete()
             message.channel.send(avatarEmbed)
+            
 
 
               .catch(error => console.error('Failed to remove reactions: ', error));
           })
       })
+
+      
       })
+
+       
 
 
 

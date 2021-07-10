@@ -14,7 +14,17 @@
     "canvas": "^2.8.0",
     "color-thief": "^2.2.5",
     "discord.js": "^12.5.3",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "owlbot-js": "^2.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasantkumar123/Aalsa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prasantkumar123/Aalsa/issues"
+  },
+  "homepage": "https://github.com/prasantkumar123/Aalsa#readme"
 }

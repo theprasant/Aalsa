@@ -5,6 +5,8 @@ module.exports = {
   aliases: ['a', 'icon', 'pfp', 'pic'],
   description: 'Shows Avatar of your or any other member in this server.',
   args: false,
+  myChannelPerms: ['VIEW_CHANNEL', 'SEND_MESSAGES', 'EMBED_LINKS'],
+
 
   execute(message, args, client) {
     try {
@@ -15,17 +17,17 @@ module.exports = {
       }
 
 
-                const avatarEmbed = new Discord.MessageEmbed()
-                  .setColor('#0099ff')
-                  .setAuthor(`${avatarUser.tag}`, `${avatarUser.displayAvatarURL({ format: 'png', dynamic: true })}`, 'https://discord.js.org')
-                  .setImage(`${avatarUser.displayAvatarURL({ format: 'png', dynamic: true })}?size=2048`)
-                  .setTimestamp()
-                  .setFooter(`Requested by ${message.author.tag}`, `${message.author.displayAvatarURL({ format: 'png', dynamic: true })}`);
-                
-                   message.channel.send(avatarEmbed)
-              
-          
-       
+      const avatarEmbed = new Discord.MessageEmbed()
+        .setColor('#0099ff')
+        .setAuthor(`${avatarUser.tag}`, `${avatarUser.displayAvatarURL({ format: 'png', dynamic: true })}`, 'https://discord.js.org')
+        .setImage(`${avatarUser.displayAvatarURL({ format: 'png', dynamic: true })}?size=2048`)
+        .setTimestamp()
+        .setFooter(`Requested by ${message.author.tag}`, `${message.author.displayAvatarURL({ format: 'png', dynamic: true })}`);
+
+      message.channel.send(avatarEmbed)
+
+
+
 
 
 
